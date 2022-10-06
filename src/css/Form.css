@@ -1,0 +1,38 @@
+.form-task {
+    width: 100%;
+    height: 5rem;   
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px solid var(--color-primary);
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+
+.form-task input {
+    width: 100%;
+    padding: 0 1.5rem;
+    background: var(--color-bg2);
+    border: none;
+    border-radius: 1rem;
+    color: var(--white);
+}
+
+.form-task input::placeholder {
+    color: var(--white);
+}
+
+.form-task button {
+    padding: 0rem 2rem;
+    border: none;
+    border-left: 1px solid var(--color-primary);
+    border-radius: 1rem;
+    background-color: var(--color-bg2);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.form-task button:hover {
+    color: white;
+    background: var(--color-primary);
+}
+
