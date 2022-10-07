@@ -5,15 +5,17 @@
     align-items: center;
     padding: 0 1.5rem;
     border-radius: 1rem;
+    border: 1px solid var(--color-primary);
 }
 
 .completado {
     background: rebeccapurple;
+    border: none;
 }
 
 .completado p {
-    color: white;
     text-decoration: line-through;
+    color: white;
 }
 
 .task p {
@@ -21,5 +23,18 @@
     font-weight: 700;
     width: 100%;
     text-align: justify;
+    cursor: pointer;
 }
 
+.icon-container {
+    z-index: 10;
+    cursor: pointer;
+}
+
+.taskIcon {
+    z-index: 100;
+}
+
+AiOutlineCloseCircle {
+    z-index: 100;
+}
