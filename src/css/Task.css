@@ -9,8 +9,8 @@
 }
 
 .completado {
-    background: rebeccapurple;
-    border: none;
+    background: rgb(51, 73, 153);
+    border: 1px solid rgb(51, 73, 153);
 }
 
 .completado p {
@@ -29,12 +29,7 @@
 .icon-container {
     z-index: 10;
     cursor: pointer;
-}
-
-.taskIcon {
-    z-index: 100;
-}
-
-AiOutlineCloseCircle {
-    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

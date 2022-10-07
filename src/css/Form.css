@@ -21,6 +21,10 @@
     color: var(--white);
 }
 
+.form-task input:focus-visible {
+    border: none;
+}
+
 .form-task button {
     padding: 0rem 2rem;
     border: none;
