@@ -1,6 +1,5 @@
 import './App.css';
-import Task from './components/Task';
-import FormTask from './components/Form';
+import ListTask from './components/ListTask';
 
 function App() {
   return (
@@ -9,7 +8,7 @@ function App() {
       <div className='box'>
         <div className='contenedor-tasklist'>
           <h1>Task List</h1>
-          
+          <ListTask  />
         </div>
       </div>
       

@@ -1,11 +1,18 @@
 import React from "react";
 import '../css/Task.css';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
 
-function Task({ text, completado }) {
+function Task({ id, text, completado, completarTarea, eliminarTarea }) {
     return (
-        <div className={completado ? 'task completado' : 'task'}>
+        <div 
+        onClick={() => completarTarea(id)}
+        className={completado ? 'task completado' : 'task'}>
             <p>{text}</p>
-            <div className="icon-container">icon</div>
+            <div 
+            onClick={() => eliminarTarea(id)}
+            className="icon-container">
+                <AiOutlineCloseCircle  className='taskIcon'/>
+            </div>
         </div>
     );
 };
